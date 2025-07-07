@@ -47,19 +47,19 @@ services:
       #the meaning of folder name, i.e., remote_storage doesn't need to be remote
       
       - type: bind
-        source: /D/docker/primary_storage # primary storage, default saving everything in C drive root, please change
+        source: /Users/calebcoons/Desktop/PAYNE_KELLY_LAB/Coding_Skills_Practice/storage_1 # primary storage, default saving everything in C drive root, please change
         target: //app/media//primary_storage #don't change
       #secondary_storage, optional but recommended
       - type: bind
-        source: /D/docker/secondary_storage
+        source: /Users/calebcoons/Desktop/PAYNE_KELLY_LAB/Coding_Skills_Practice/storage_2
         target: //app/media//secondary_storage #don't change
       #remote_storage, optional but recommended
       - type: bind
-        source: /D/docker/remote_storage
+        source: /Users/calebcoons/Desktop/PAYNE_KELLY_LAB/Coding_Skills_Practice/storage_3
         target: //app/media//remote_storage #don't change
       #offline_storage, optional but recommended  
       - type: bind
-        source: /D/docker/offline_storage
+        source: /Users/calebcoons/Desktop/PAYNE_KELLY_LAB/Coding_Skills_Practice/storage_4
         target: //app/media//offline_storage #don't change
 
   data_manager-JupiterNotebook:
@@ -72,3 +72,4 @@ services:
 volumes:
   uwsgi_data:
   web_static:
+
